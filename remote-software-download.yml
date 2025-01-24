@@ -1,6 +1,6 @@
 title: Remote Desktop Software Downloaded
 id: c6298ace-1bd4-4f29-b57a-224244db9573
-status: test
+status: experimental
 description: Detects downloaded remote desktop software used by scammers
 references:
     - https://attack.mitre.org/techniques/T1219/
