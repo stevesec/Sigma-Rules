@@ -33,6 +33,11 @@ Custom Sigma rules for detecting security threats and suspicious activities acro
 - Requires validation in your specific environment
 - Periodic review and updates recommended
 
+## Inspiration
+
+- [Kitboga](https://www.youtube.com/@KitbogaShow)
+- [John Hammond](https://www.youtube.com/@_JohnHammond) @JohnHammond
+
 ## Contributing
 - Open to pull requests
 - Please include test cases and context for new rules
