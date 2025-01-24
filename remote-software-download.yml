@@ -15,7 +15,9 @@ logsource:
     category: file_event
 detection:
     selection:
-        TargetFilename|contains:
+        TargetFilename|startswith: 'C:\Users\'
+        TargetFilename|contains: '\Downloads\'
+        TargetFilename|endswith:
             - '*anydesk*'
             - '*ANYDESK*'
             - '*AnyDesk*'

@@ -9,6 +9,8 @@ Custom Sigma rules for detecting security threats and suspicious activities acro
   - Active Directory Reconnaissance Tools
   - Other specific threat detection scenarios
 
+![Caught](/assets/caught_splashtop.png)
+
 ## Sigma Rule Details
 - **Status**: Experimental/Test
 - **Platforms**: Primarily Windows
@@ -37,4 +39,4 @@ Custom Sigma rules for detecting security threats and suspicious activities acro
 - Please feel free to add more test cases that you see to any Sigma Rules here
 
 ## License
-[Your License Here]
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
