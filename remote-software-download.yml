@@ -1,0 +1,70 @@
+title: Remote Desktop Software Downloaded
+id: c6298ace-1bd4-4f29-b57a-224244db9573
+status: test
+description: Detects downloaded remote desktop software used by scammers
+references:
+    - https://attack.mitre.org/techniques/T1219/
+author: SteveSec
+date: 2024/01/24
+modified: 2024/01/24
+tags:
+    - attack.discovery
+    - attack.remote_access
+logsource:
+    product: windows
+    category: file_event
+detection:
+    selection:
+        TargetFilename|contains:
+            - '*anydesk*'
+            - '*ANYDESK*'
+            - '*AnyDesk*'
+            - '*TeamViewer*'
+            - '*TEAMVIEWER*'
+            - '*teamviewer*'
+            - '*ultraviewer*'
+            - '*ULTRAVIEWER*'
+            - '*UltraViewer*'
+            - '*logmein*'
+            - '*LOGMEIN*'
+            - '*LogMeIn*'
+            - '*gotomypc*'
+            - '*GOTOMYPC*'
+            - '*GoToMyPC*'
+            - '*zoho assist*'
+            - '*ZOHO ASSIST*'
+            - '*Zoho Assist*'
+            - '*supremo*'
+            - '*SUPREMO*'
+            - '*SupRemo*'
+            - '*ammyy admin*'
+            - '*AMMYY ADMIN*'
+            - '*Ammyy Admin*'
+            - '*remotepc*'
+            - '*REMOTEPC*'
+            - '*RemotePC*'
+            - '*showmypc*'
+            - '*SHOWMYPC*'
+            - '*ShowMyPC*'
+            - '*connectwise control*'
+            - '*CONNECTWISE CONTROL*'
+            - '*ConnectWise Control*'
+            - '*vnc*'
+            - '*VNC*'
+            - '*splashtop*'
+            - '*SPLASHTOP*'
+            - '*Splashtop*'
+            - '*quick assist*'
+            - '*QUICK ASSIST*'
+            - '*Quick Assist*'
+            - '*radmin*'
+            - '*RADMIN*'
+            - '*Radmin*'
+            - '*remote utilities*'
+            - '*REMOTE UTILITIES*'
+            - '*Remote Utilities*'
+    condition: selection
+falsepositives:
+    - IT department software deployments
+    - Legitimate remote support scenarios
+level: high
